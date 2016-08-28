@@ -1,0 +1,317 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrstest="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tab_bg"
+    >
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/al_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_380"
+        android:background="@drawable/person_center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px_4"
+        android:paddingTop="@dimen/px_4" >
+
+        <com.weixin.zhongli.mView.CircleImageView
+            android:id="@+id/iv_consumerinfo_photo"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="@dimen/px_150"
+            android:layout_marginBottom="@dimen/px_79"
+            android:layout_marginLeft="@dimen/px_70"
+            android:layout_marginTop="@dimen/px_80"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/andy"
+            attrstest:border_outside_color="#1effffff"
+            attrstest:border_thickness="2dp" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_consumerinfo_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="刘德华"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_40" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/myself_ll_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/px_20">
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/go_to_icon"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/px_150"
+        android:orientation="horizontal">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/myself_tv_fans"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/px_35"
+                android:text=" 100 \n 粉丝"/>
+            <ImageView
+                android:id="@+id/myself_iv_fans"
+                android:layout_margin="@dimen/px_10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/yline"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/px_35"
+                android:text=" 100 \n 关注"/>
+            <ImageView
+                android:layout_margin="@dimen/px_10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/yline"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/px_35"
+                android:text=" 100 \n 留言"/>
+            <ImageView
+                android:layout_margin="@dimen/px_10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_consumerinfo_allOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/linearlayout_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30" >
+
+        <ImageView
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/my_order" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="我的订单"
+            android:textColor="#505050"
+            android:textSize="@dimen/px_30" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/main_more" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_consumerinfo_myJF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/linearlayout_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30" >
+
+        <ImageView
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/my_integral" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="我的积分"
+            android:textColor="#505050"
+            android:textSize="@dimen/px_30" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/main_more" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_consumerinfo_returnmsg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/linearlayout_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30" >
+
+        <ImageView
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/feedback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="意见反馈"
+            android:textColor="#505050"
+            android:textSize="@dimen/px_30" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/main_more" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_consumerinfo_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/linearlayout_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30" >
+
+        <ImageView
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/contact_customer_service" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="联系客服"
+            android:textColor="#505050"
+            android:textSize="@dimen/px_30" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/main_more" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_consumerinfo_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+        android:background="@drawable/linearlayout_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30" >
+
+        <ImageView
+            android:layout_width="@dimen/px_30"
+            android:layout_height="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="设置"
+            android:textColor="#505050"
+            android:textSize="@dimen/px_30" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/main_more" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

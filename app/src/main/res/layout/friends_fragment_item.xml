@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/px_10"
+        >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="@dimen/px_10"
+        android:id="@+id/al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.weixin.zhongli.mView.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:padding="@dimen/px_10"
+            android:id="@+id/iv_pic"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/px_130"
+            android:layout_height="@dimen/px_130"
+            android:src="@drawable/andy"
+            app:sriv_left_top_corner_radius="@dimen/px_2"
+            app:sriv_right_top_corner_radius="@dimen/px_2"
+            app:sriv_left_bottom_corner_radius="@dimen/px_2"
+            app:sriv_right_bottom_corner_radius="@dimen/px_2"
+            app:sriv_border_width="2dip"
+            app:sriv_border_color="#008fea"
+            app:sriv_oval="true" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/al_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name"
+                android:textSize="@dimen/px_45"
+                android:textColor="@color/txt_color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘德华"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="@dimen/px_10"
+                android:id="@+id/al_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            >
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/message_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:id="@+id/tv_cantont"
+        android:layout_below="@id/al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_color_2"
+        android:text="百花丛中过，片页不沾身"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <ImageView
+        android:id="@+id/iv_attention"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/type_select_btn_pressed"
+      />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

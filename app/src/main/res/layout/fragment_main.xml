@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.weixin.zhongli.pulltorefresh.PullToRefreshScrollView
+        android:scrollbars="none"
+        android:id="@+id/pull_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <com.weixin.zhongli.mView.MyListView
+        android:id="@+id/lv_bbs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.weixin.zhongli.mView.MyListView>
+    </com.weixin.zhongli.pulltorefresh.PullToRefreshScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

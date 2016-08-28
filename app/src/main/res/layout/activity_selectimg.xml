@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:background="@color/top_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="写动态"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_50" />
+
+        <TextView
+            android:layout_marginEnd="@dimen/px_30"
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_8"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@drawable/text_while"
+            android:textSize="@dimen/px_40" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px_200"
+            android:layout_margin="@dimen/px_8"
+            android:gravity="left|top"
+            android:hint="发表内容..."
+            android:background="@null" >
+        </EditText>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/px_140">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_50"
+            android:layout_marginLeft="@dimen/px_20"
+            android:textColor="#353535"
+            android:text="类型"/>
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:id="@+id/sp_type"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_height="@dimen/px_140" >
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="设置0元或不填为不悬赏"
+            android:paddingLeft="@dimen/px_160"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="@dimen/px_200"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_password"
+            android:layout_centerVertical="true"
+
+            android:text="xs"
+            android:layout_marginLeft="@dimen/px_20"
+            android:textColor="#353535"
+            android:textSize="@dimen/px_50" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:padding="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签"
+            android:textColor="#353535"
+            android:textSize="@dimen/px_50"/>
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签更详细，更容易找到你需要的"
+            android:textColor="@color/text_color1"
+            android:layout_marginLeft="@dimen/px_20"
+            android:textSize="@dimen/px_30"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_height="@dimen/px_100" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="地点"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:layout_marginLeft="@dimen/px_20"
+            android:padding="@dimen/px_20"
+            android:textSize="@dimen/px_40" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:padding="@dimen/px_20"
+            android:hint="时间"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="@dimen/px_40" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:padding="@dimen/px_20"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="sm"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="@dimen/px_40" />
+        <ImageView
+            android:id="@+id/iv_lab_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/px_10"
+            android:src="@drawable/add"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_more_lab"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_height="@dimen/px_100" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="地点"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:layout_marginLeft="@dimen/px_20"
+            android:padding="@dimen/px_20"
+            android:textSize="@dimen/px_40" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:padding="@dimen/px_20"
+            android:hint="时间"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="@dimen/px_40" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/px_20"
+            android:padding="@dimen/px_20"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="sm"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="@dimen/px_40" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <GridView
+        android:layout_margin="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_40"
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:horizontalSpacing="@dimen/px_3"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/px_20" >
+    </GridView>
+
+</com.zhy.autolayout.AutoLinearLayout>

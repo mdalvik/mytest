@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_inline_error_holo_light_am"
+    android:orientation="vertical">
+    <TextView
+    android:padding="@dimen/px_10"
+        android:id="@+id/more_phone"
+        android:drawableLeft="@drawable/n_weekking"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:drawablePadding="@dimen/px_30"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="联系他"/>
+
+    <View
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#191B1C" />
+
+    <TextView
+        android:padding="@dimen/px_10"
+        android:id="@+id/more_attention"
+        android:drawableLeft="@drawable/attention"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/px_30"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注"/>
+    <View
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#191B1C" />
+
+    <TextView
+        android:padding="@dimen/px_10"
+        android:id="@+id/more_messge"
+        android:drawableLeft="@drawable/n_newtie"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/px_30"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="留言"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

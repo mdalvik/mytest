@@ -1,0 +1,51 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:background="@color/top_color"
+        android:orientation="horizontal">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/px_40"
+                android:id="@+id/main_tv_all"
+                android:padding="@dimen/px_20"
+                android:textColor="@color/cheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@color/cheng"
+                android:text="同道人"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/main_iv_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_title_search"
+            android:padding="@dimen/px_20"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:scrollbars="none"
+        android:id="@+id/pull_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <com.weixin.zhongli.mView.MyListView
+        android:scrollbars="none"
+        android:id="@+id/lv_tontant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
