@@ -25,7 +25,7 @@ import java.util.List;
 public class ImagePreviewActivity extends Activity implements OnClickListener {
 
 	/**
-	 * 顶部栏
+	 * 顶部栏1
 	 */
 	private TopView topView;
 
