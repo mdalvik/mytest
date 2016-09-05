@@ -6,7 +6,7 @@ android {
         mykey {
             keyAlias 'zl20160828'
             keyPassword 'zl20160828'
-            storeFile file('大哥就是吊')
+            storeFile file('大哥就是吊!')
             storePassword 'zl20160828'
         }
     }
