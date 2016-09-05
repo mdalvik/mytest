@@ -2,10 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
+    signingConfigs {
+        mykey {
+            keyAlias 'zl20160828'
+            keyPassword 'zl20160828'
+            storeFile file('C:/Users/David/Documents/zl.jks')
+            storePassword 'zl20160828'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
-
     defaultConfig {
         applicationId "com.weixin.zhongli"
         minSdkVersion 15
